@@ -27,7 +27,7 @@ categories : [Coursera-Data Structures and Algorithms, computer science]
 
 - Code snippet for Fibonacci
 
-```cpp
+{% highlight cpp %}
 //easy way to do fibonacci
 int fibonacci(int n) {
     int prev = 0, cur = 1;
@@ -37,13 +37,13 @@ int fibonacci(int n) {
     }
     return cur;
 }
-```
+{% endhighlight %}
 
 - The sum of fist n Fibonacci terms, $$S(n) = Fib(n+2) - 1$$.
 
 - Fibonacci series mod m $$F_{mod(m)}$$, follows a periodic pattern called the Pisano series for $$m \geq 2 $$. It always starts with 0,1. So finding where 0,1 occurs together in $$F_{mod(m)}$$ will allow you to find the periodicity of this series and hence easily calculate any value in the series without doing the entire computation.
 
-```c++
+{% highlight cpp %}
   int fib_mod_m(int n, int m){
     // find the periodicity of Pisano series of mod m.
     int count = periodicity_pisano(m);
@@ -52,7 +52,7 @@ int fibonacci(int n) {
     
     return fibonacci(n_mod) % m;
   }
-```
+{% endhighlight %}
 
 - GCD can be quickly calculated using the Eucildean algorithm.
 
@@ -62,58 +62,58 @@ int fibonacci(int n) {
 
   ### Questions
 
-  - What is a subproblem?
+1. What is a subproblem?
 
-  - Safe move for car refueling problem.
+2. Safe move for car refueling problem.
 
-  - Safe move for grouping children problem.
+3. Safe move for grouping children problem.
 
-  - Safe move for fractional knapsack problem.
+4. Safe move for fractional knapsack problem.
 
   ### Notes
 
-  - A subproblem is a similar problem of a smaller size.
+- A subproblem is a similar problem of a smaller size.
 
-  - A **safe move** is a greedy choice which is a part of the final optimal solution.
+- A **safe move** is a greedy choice which is a part of the final optimal solution.
 
-  - Greedy strategy :
+- Greedy strategy :
 
-    - Find a safe move.
+- Find a safe move.
 
-    - Prove it's correctness.
+- Prove it's correctness.
 
-    - Choose a subproblem.
+- Choose a subproblem.
 
-    - Apply safe move to subproblem.
+- Apply safe move to subproblem.
 
-      ![The greedy strategy](greedy.png)
+  ![The greedy strategy](greedy.png)
 
-  - Car refueling problem safe move : allow the car to travel to the farthest refill point it can with the fuel it has.
+- Car refueling problem safe move : allow the car to travel to the farthest refill point it can with the fuel it has.
 
-  - Grouping children problem safe move : allow the leftmost value of a subproblem to be the starting point of the new group.
+- Grouping children problem safe move : allow the leftmost value of a subproblem to be the starting point of the new group.
 
-  - Fractional knapsack problem safe move : choose items based on a descending order of value per weight.
+- Fractional knapsack problem safe move : choose items based on a descending order of value per weight.
 
   ## Week 4 : Divide and Conquer
 
   ### Questions
 
-  - What are the different essential parts that make up a problem solvable using divide and conquer algorithms?
+1. What are the different essential parts that make up a problem solvable using divide and conquer algorithms?
 
-  - What is a recurrence relation?
+2. What is a recurrence relation?
 
-  - What are the steps involved in defining a divide and conquer solution?
+3. What are the steps involved in defining a divide and conquer solution?
 
   ### Notes
 
-  - Divide and conquer strategy can be used if the problem : 
+- Divide and conquer strategy can be used if the problem : 
 
     - Can be divided into smaller, non-overlapping subproblems of the same type as the original problem.
 
     - Can be finally solved by combining the answers to all the subproblems.
 
 
-  - A divide a conquer strategy involves :
+- A divide a conquer strategy involves :
 
     - Defining a recursive solution
 
@@ -122,5 +122,5 @@ int fibonacci(int n) {
     - Optionally, create an iterative version of the algorithm.
 
 
-  - Recurrence relation : equation that recursively defines a sequence of values.
+- Recurrence relation : equation that recursively defines a sequence of values.
   
