@@ -27,7 +27,7 @@ categories : [Coursera-Data Structures and Algorithms, computer science]
 
 - Code snippet for Fibonacci
 
-```cpp
+{% highlight cpp linenos%}
 //easy way to do fibonacci
 int fibonacci(int n) {
     int prev = 0, cur = 1;
@@ -37,13 +37,13 @@ int fibonacci(int n) {
     }
     return cur;
 }
-```
+{% endhighlight %}
 
 - The sum of fist n Fibonacci terms, $$S(n) = Fib(n+2) - 1$$.
 
 - Fibonacci series mod m $$F_{mod(m)}$$, follows a periodic pattern called the Pisano series for $$m \geq 2 $$. It always starts with 0,1. So finding where 0,1 occurs together in $$F_{mod(m)}$$ will allow you to find the periodicity of this series and hence easily calculate any value in the series without doing the entire computation.
 
-```c++
+{% highlight cpp linenos%}
   int fib_mod_m(int n, int m){
     // find the periodicity of Pisano series of mod m.
     int count = periodicity_pisano(m);
@@ -52,7 +52,7 @@ int fibonacci(int n) {
     
     return fibonacci(n_mod) % m;
   }
-```
+{% endhighlight %}
 
 - GCD can be quickly calculated using the Eucildean algorithm.
 
