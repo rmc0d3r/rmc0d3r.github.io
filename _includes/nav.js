@@ -1,4 +1,4 @@
-window.onload = function getNavButtonLinks(event) {
+function getNavButtonLinks(event) {
 	var menuItems = document.getElementsByClassName("menu-item");
 	
 	var prevSectionUrl = menuItems[0].getElementsByTagName("a")[0].href;
@@ -25,3 +25,7 @@ window.onload = function getNavButtonLinks(event) {
 	elem = document.getElementById("next-button").getElementsByTagName("a")[0];
 	elem.href = nextSectionUrl;
 }
+
+if (window.attachEvent) {window.attachEvent('onload', getNavButtonLinks);}
+else if (window.addEventListener) {window.addEventListener('load', getNavButtonLinks, false);}
+else {document.addEventListener('load', getNavButtonLinks, false);} 
