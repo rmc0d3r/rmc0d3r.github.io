@@ -6,7 +6,7 @@ excerpt: Self-study notes and questions from the Algorithm's Toolbox course on C
 image: /assets/beach.jpg
 categories : [series, computer science, algorithms]
 series: Coursera - Data Structures and Algorithms
-color-scheme: rgb(196, 71, 0)
+color_scheme: rgb(196, 71, 0)
 ---
 # Algorithms
 
