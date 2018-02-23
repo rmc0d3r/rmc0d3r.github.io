@@ -3,9 +3,10 @@ layout: post_layout
 date : 2018-02-17
 title : "Algorithms Toolbox Notes" 
 excerpt: Self-study notes and questions from the Algorithm's Toolbox course on Coursera.
-image: /assets/walkway.jpg
+image: /assets/beach.jpg
 categories : [series, computer science, algorithms]
 series: Coursera - Data Structures and Algorithms
+color-scheme: rgb(196, 71, 0)
 ---
 # Algorithms
 
