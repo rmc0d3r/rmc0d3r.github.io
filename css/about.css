@@ -44,7 +44,7 @@ div#banner {
 	position: fixed;
 	z-index: -2;
 	
-	background: url(/assets/mandelbrot.jpg) no-repeat center center fixed;
+	background: url(/assets/mandelbrot.jpg) no-repeat center center scroll;
 	background-size: cover;
   	overflow: hidden;
 	

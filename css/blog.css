@@ -24,7 +24,7 @@ div#banner {
 	position: fixed;
 	z-index: -2;
 	
-	background: url(/assets/lorentz.png) no-repeat center center fixed;
+	background: url(/assets/lorentz.png) no-repeat center center scroll;
 	background-size: cover;
   	overflow: hidden;
 	
