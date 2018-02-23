@@ -1,0 +1,70 @@
+---
+title: post_layout
+---
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>{{ page.title }}</title>
+		
+		<!-- Meta information -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Stylesheets and scripts -->
+	
+		<!-- Public CDN links -->
+		
+		<!-- Mathjax -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+		type="text/javascript"></script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		
+		<!-- Private style sheets and scripts -->
+		<link rel="stylesheet" href="/css/post.css">
+		<script src="/js/post.js"></script>
+	</head>
+
+
+<body>
+	{% include menu.html %}
+
+	<div id="banner-wrapper">
+		<div id="banner"></div>
+	
+		<div id="tagline">
+			<h1 id="page-title">{{ page.title }}</h1>
+		</div>
+	</div>
+	
+	<div id="content-wrapper">
+		<div id="content">
+			{{ content }}
+		</div> 
+	</div>
+
+	
+</body>
+
+<style>
+	div#banner {
+		background-image:url('{{ page.image }}');
+	}
+	
+	h1#page-title {
+		background: transparent;
+		color: white;
+		text-shadow: 0 0 40px {{ page.color_scheme }};
+		font-family: 'Abril Fatface';
+	}
+	
+	div#content-wrapper {
+		background: {{ page.color_scheme }};
+	}
+</style>
+
+</html>

@@ -1,0 +1,40 @@
+---
+layout: blog_layout
+title: blog
+---
+{% include menu.html %}
+{% include nav.html %}
+
+<div id="banner-wrapper">
+	<div id="banner"></div>
+	
+	<div id="tagline">
+		Every word is an idea condensed
+	</div>
+</div>
+
+<div id="content">
+	
+	<h1>Blog</h1>	
+	
+	{% for post in site.posts %}
+		
+		<div id="blog-item">
+		
+			<div id="item-date">
+				{{ post.date }}
+			</div>
+			
+			<a href="{{ post.url }}" title="{{ post.title }}">
+				<div id="item-title">
+					{{ post.title }}
+				</div>
+			</a>
+			
+			<div id="item-excerpt">
+				{{ post.excerpt }}
+			</div>
+		</div>
+		
+	{% endfor %}
+</div>

@@ -1,0 +1,157 @@
+/* CSS for navigation menu */
+div.menu-div {
+	position: fixed;
+	
+	top: 3%;
+	left: 1%;
+	
+	display: inline-block;
+	//border: solid red;
+	padding: 0;
+	margin: 0;
+}
+
+div.menu-button-div {
+	display: flex;
+	justify-content: left;
+}
+
+button.menu-button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0px 0px 5px 0px;
+	
+	color : rgba(200,200,200, 1);
+	background-color: rgba(30,30,30,0.8);
+	border: 0;
+
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5),
+				inset 0 0 20px rgba(10, 10, 10, 0.5);
+}
+
+button.menu-button:hover {
+	box-shadow: inset 0 0 20px rgba(10, 10, 10, 0.5),
+				0 0 30px rgba(255, 255, 200, 0.7);
+}
+
+button.menu-button:focus {
+	outline: none;
+	box-shadow: inset 0 0 20px rgba(10, 10, 10, 0.5),
+				0 0 30px rgba(200, 200, 50, 0.7);
+}
+
+button.menu-button:active {
+	outline: none;
+	box-shadow: inset 0 0 20px rgba(10, 10, 10, 0.5),
+				0 0 40px rgba(200, 200, 50, 0.9);
+}
+
+ul.menu-list {
+	display: none;
+	
+	position: relative;
+	z-index: 2;	
+	list-style: none;
+	padding: 0px 0px;
+}
+
+ul.menu-list li {
+	//border: solid blue;
+	font-size: 25px;
+	font-family: 'Princess Sofia';
+	text-align: center;
+	border-radius : 5%;
+	padding: 10px 0px;
+	
+	background-color: rgba(0,0,0,0.7);
+	box-shadow: inset 0 0 10px rgba(200, 200, 200, 0.5),
+		    inset 0 0 20px rgba(10, 10, 10, 0.7);
+}
+
+ul.menu-list>li>a {
+	//border: solid green;
+	color: rgba(255, 255, 250, 1);
+	text-decoration: none;
+	padding: 0px 20px;
+	display: block;
+}
+
+ul.menu-list li a:hover, ul.menu-list li a:focus {
+	outline: 0;
+	text-shadow: 0 0 20px rgba(255, 255, 250, 1);
+}
+
+
+
+/* CSS for Navigation buttons */
+div#navigation-buttons {
+	pointer-events: none;
+	position: absolute;
+	bottom: 25%;
+	
+	//border: 2px solid red;
+ 	
+	width: 100%;
+	height: 70px;
+	
+	display: block;
+	
+	//border: solid;
+}
+
+button#next-button, button#prev-button {
+	pointer-events: auto;
+	width: 70px;
+	height: 70px;
+	display: block;
+	border: 0;
+	border-radius: 50%;
+	
+	background-color: rgba(0, 0, 0, 0.1);
+
+	
+}
+
+button#next-button {
+	outline: 0;
+	position: fixed;
+	right: 2%;
+	
+	animation-name: next-button-animate;
+	animation-duration: 1s;
+}
+
+@keyframes next-button-animate {
+	0% {transform: translate(0px,0px)}
+	50% {transform: translate(-20px, 0px)}
+	100% {transform: translate(0px, 0px)}
+}
+
+button#prev-button {
+	outline: 0;
+	position: fixed;
+	left: 2%;
+	
+	animation-name: prev-button-animate;
+	animation-duration: 1s;
+}
+
+@keyframes prev-button-animate {
+	0% {transform: translate(0px,0px)}
+	50% {transform: translate(20px, 0px)}
+	100% {transform: translate(0px, 0px)}
+}
+
+button#next-button span, button#prev-button span {
+	color: rgba(200, 200, 200, 0.7);
+	font-size: 30px;
+	padding: 0px 0px 0px 0px;
+	border-radius: 50%;
+	transition: transform 0.5s;
+}
+
+button#next-button span:hover, button#next-button span:focus, button#prev-button span:hover, button#prev-button span:focus {
+	outline: none;
+	transform: scale(1.5, 1.5);
+} 

@@ -1,0 +1,81 @@
+---
+title: homepage.css
+---
+body {
+	background-color: rgb(0, 0, 0);
+	background: url(/assets/smoke.jpg) no-repeat center center fixed;
+	background-size : cover;
+	overflow: hidden;
+}
+
+/* CSS for title */
+
+div#title {
+	pointer-events: none;
+	display: block;
+	//border : solid;
+	width : 100%;
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	text-align: center;
+}
+
+div#title_word {
+	display: flex;
+	//border: solid;
+	justify-content: center;
+}
+
+h3, h1 {
+	display: inline;
+	//border: solid;
+	margin: auto;
+	color: black;
+	
+	text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
+
+#chaos {
+	font-family:'Homemade Apple'; 
+	font-size: 50px;
+	opacity: 0.9;
+}
+
+#emergence {
+	font-family: 'Monsieur La Doulaise'; 
+	font-size:80px; 
+	font-weight:550; 
+	margin:-15px;
+	
+	
+}
+
+/* CSS for tagline */
+
+div#tagline_div {
+	pointer-events: none;
+	display: block;
+	//border: solid;
+	width: 100%;
+	//margin: auto;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	text-align: center;
+}
+
+#tagline {
+	font-family: 'Princess Sofia';
+	font-size:30px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+
+
+{% include general.css %}
+
+button#prev-button {
+	visibility: hidden;
+}

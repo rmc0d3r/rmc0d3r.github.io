@@ -1,9 +1,15 @@
 ---
-layout: post
-title: "Looking Closely at the Velocity of a Body in Free Fall"
+layout: post_layout
 date: 2018-02-17
-categories: [physics, note]
+title: "Looking Closely at the Velocity of a Body in Free Fall"
+categories: [notes, physics]
+image: /assets/mandelbrot.jpg
+color_scheme: rgb(4, 22, 45)
+excerpt: examining the symmetry exhibited by a body in free fall due to constant acceleration.
 ---
+
+## How fast is it when it comes back?
+
 When a body is thrown up with initial velocity $$v_0$$ while under the influence of a constant downward acceleration $$-g$$, it returns to the point of release with velocity $$-v_{0}$$ . This is really interesting because we can throw this body from anywhere and however hard we want but it still comes back with the same magnitude of velocity as we threw it. However on closer analysis of the equations we realize this is no magic.
 
   Let us assume for simplicity (without loss of generality) that the initial position is $$x_{0}=0m$$ . We are given the initial velocity $$v_{0}$$. Also note that the final position is $$x_{f}=0m$$ because we want to analyze the body when it is back at its initial position. Now using the equation for position at a future time we get,
@@ -19,6 +25,8 @@ When a body is thrown up with initial velocity $$v_0$$ while under the influence
   Let us now use this to calculate the final velocity of the body when it returns. We know that for constant acceleration the velocity at a future time can be calculated using the equation,
 
   $$v_{return}=v_{0}-gt_{return}=v_{o}-2v_{0}=-v_{0}$$
+
+## Why?
 
   So now we have proved the statement. But why is it so? What is the connection between gravity and the speed at which the body returns to where it was thrown from? Even though we can throw the body from anywhere and with any velocity, $$g$$  controls how much a body should speed up or down in a given interval of time. So it decides when the body should stop , i.e, have zero velocity too. And this in turn decides how high the body goes before the velocity becomes negative and the body starts to fall downwards. 
 
@@ -45,6 +53,8 @@ When a body is thrown up with initial velocity $$v_0$$ while under the influence
   $$x_{top}=v_{avg}.t_{up}$$
 
   So that is it. The maximum distance traveled upwards is the product of average velocity and time taken to reach there. But of course, this is given the constant acceleration. 
+
+## Conclusion
 
   These results can be used more generally : 
 

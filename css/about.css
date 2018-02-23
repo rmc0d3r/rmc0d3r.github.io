@@ -1,0 +1,116 @@
+---
+title: about.css
+---
+{% include general.css %}
+
+html, body {
+	//background-color: rgba(255, 255, 255, 1);
+	height: 100%;
+}
+
+div#banner-wrapper {
+	pointer-events: none;
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	//border: solid;
+}
+
+div#standing-man {
+	//border: solid;
+	
+	width: 100px;
+	height: 200px;
+	
+	position: absolute;
+	bottom: 0%;
+	left: 5%;
+	
+	z-index: -1;
+	
+}
+
+div#standing-man img {
+	width: 100%;
+	height: 100%;
+}
+
+div#banner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+	position: fixed;
+	z-index: -2;
+	
+	background: url(/assets/mandelbrot.jpg) no-repeat center center fixed;
+	background-size: cover;
+  	overflow: hidden;
+	
+	//border: solid;
+
+}
+
+div#tagline {
+	position: fixed;
+	bottom: 0%;
+	z-index: -1;
+	
+	width: 100%;
+	height: auto;
+	text-align: center;
+	//border: solid;
+	
+	//background: white;
+	
+	padding: 10px 0px 0px 0px;
+	
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 20px rgb(0, 0, 255);
+	font-size: 20px;
+	font-family: "Cinzel";
+
+}
+
+
+div#content {
+	width:100%;
+	min-height: 100%; 
+	margin: 0px auto 30px auto; 
+	padding: 10px 0px;
+	//border: solid;
+	background: rgba(2, 1, 10, 1);
+	
+}
+
+div#content>div {
+	padding: 0px 0px;
+	margin: 20px auto 20px auto;
+}
+
+div#content div#profile-pic {
+//	border: solid;
+	width: 250px;
+	height: 250px;
+}
+
+div#profile-pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+div#content div#profile-desc {
+	border: solid;
+	max-width: 90%;
+	
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding: 5px 10px; 
+	
+	text-align: center;
+	
+	color: rgba(181, 143, 32, 1);
+}
+
